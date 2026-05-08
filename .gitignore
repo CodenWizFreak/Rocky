@@ -1,0 +1,188 @@
+# =============================================================================
+# Rocky — KG + GNN recommender (Python / uv, Next.js, PyTorch)
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# Operating system
+# -----------------------------------------------------------------------------
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+*~
+
+# -----------------------------------------------------------------------------
+# Editors & tooling
+# -----------------------------------------------------------------------------
+.idea/
+*.iml
+*.sublime-project
+*.sublime-workspace
+.project
+.classpath
+.settings/
+
+# VS Code (drop-in team settings: use ! exceptions as needed)
+.vscode/
+
+# Multi-root workspace files (often machine-specific paths)
+*.code-workspace
+
+# -----------------------------------------------------------------------------
+# Environment & secrets
+# -----------------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+!.env*.example
+*.pem
+*.key
+secrets/
+credentials.json
+
+# -----------------------------------------------------------------------------
+# Python
+# -----------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg
+*.egg-info/
+.eggs/
+dist/
+build/
+wheels/
+pip-wheel-metadata/
+*.manifest
+*.spec
+pip-log.txt
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# uv (keep uv.lock committed)
+.uv/
+
+# Testing, typing, coverage
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.dmypy.json
+dmypy.json
+.pytype/
+.pyre/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+*.cover
+.hypothesis/
+nosetests.xml
+test-results/
+junit.xml
+
+# Jupyter / IPython
+.ipynb_checkpoints/
+profile_default/
+ipython_config.py
+*.nbconvert.py
+
+# -----------------------------------------------------------------------------
+# Node.js & Next.js (frontend)
+# -----------------------------------------------------------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+.pnpm-store/
+
+# Next.js
+.next/
+out/
+.vercel
+*.tsbuildinfo
+
+# Build / bundler output (general)
+.turbo/
+.parcel-cache/
+
+# -----------------------------------------------------------------------------
+# Machine learning & experiment tracking
+# -----------------------------------------------------------------------------
+# Checkpoints & serialized graphs (regenerate via train / build_kg)
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.pb
+*.joblib
+*.pickle
+*.pkl
+models/shards/
+
+# processed graph shards — regenerate from data pipeline
+data/processed/
+**/processed/graph.pt
+**/shards/*.pt
+
+# Datasets — downloaded archives (keep README pointers; fetch locally)
+data/raw/*.zip
+data/raw/**/*.zip
+*.tar.gz
+*.tgz
+
+# MovieLens / similar (uncomment if you do not commit the extracted set)
+# ml-100k/
+
+# Weights & Biases, MLflow, etc.
+wandb/
+mlruns/
+.lightning/
+lightning_logs/
+.neptune/
+tensorboard/
+runs/
+logs/
+*.log
+
+# Hugging Face & model caches (unlearn_chat / LLM stacks)
+.cache/
+**/.huggingface/
+**/.torch/
+
+# -----------------------------------------------------------------------------
+# FastAPI / backend runtime (optional — remove if you version demo JSON)
+# -----------------------------------------------------------------------------
+# backend/state/dislikes.json
+
+# -----------------------------------------------------------------------------
+# Misc project artifacts
+# -----------------------------------------------------------------------------
+*.tmp
+*.temp
+*.bak
+*.orig
+*.rej
+.sass-cache/
+.cache-loader/
+
+# EEMU / vendored experiments (ignore build cruft if present)
+EEMU-main/**/node_modules/
+EEMU-main/**/.next/
+EEMU-main/**/__pycache__/
+
+# Profiling
+*.prof
+*.lprof

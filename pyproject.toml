@@ -1,0 +1,19 @@
+[project]
+name = "kg-gnn-unlearn"
+version = "0.1.0"
+description = "KG + GNN Movie Recommender with Machine Unlearning"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi",
+    "uvicorn[standard]",
+    "torch>=2.2.0",
+    "torch_geometric",
+    "networkx",
+    "pandas",
+    "numpy",
+    "scikit-learn",
+    "tqdm",
+]
+
+[tool.uv]
+find-links = ["https://data.pyg.org/whl/torch-2.2.0+cpu.html"]
