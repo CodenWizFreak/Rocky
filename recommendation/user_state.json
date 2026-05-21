@@ -1,0 +1,60 @@
+{
+  "liked_movies": [
+    "The Dark Knight"
+  ],
+  "disliked_movies": [
+    "Planet Earth II",
+    "Planet Earth"
+  ],
+  "liked_genres": [],
+  "disliked_genres": [
+    "Western"
+  ],
+  "genre_weights": {
+    "Action": 1.15,
+    "Adventure": 1.0,
+    "Animation": 1.0,
+    "Comedy": 1.0,
+    "Crime": 1.15,
+    "Documentary": 1.0,
+    "Drama": 1.15,
+    "Family": 1.0,
+    "Fantasy": 1.0,
+    "History": 1.0,
+    "Horror": 1.0,
+    "Music": 1.0,
+    "Mystery": 1.0,
+    "Romance": 1.0,
+    "Science Fiction": 1.0,
+    "Sci-Fi": 1.0,
+    "Thriller": 1.15,
+    "TV Movie": 1.0,
+    "War": 1.0,
+    "Western": 0.7
+  },
+  "last_recommendations": [],
+  "preference_events": [
+    {
+      "type": "dislike_movie",
+      "title": "Planet Earth II"
+    },
+    {
+      "type": "dislike_movie",
+      "title": "Planet Earth"
+    },
+    {
+      "type": "dislike_genre",
+      "genre": "Western"
+    },
+    {
+      "type": "like_movie",
+      "title": "The Dark Knight",
+      "genres": [
+        "Drama",
+        "Action",
+        "Crime",
+        "Thriller"
+      ]
+    }
+  ]
+}

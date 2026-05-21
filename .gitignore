@@ -186,3 +186,6 @@ EEMU-main/**/__pycache__/
 # Profiling
 *.prof
 *.lprof
+
+
+recommendation/data/
