@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── CSS custom properties ───────────────────────────────────────────────── */
+:root {
+  /* Background */
+  --bg-base: #04040c;
+  --bg-surface: rgba(255, 255, 255, 0.04);
+
+  /* Accent palette */
+  --accent-green: #00ff88;
+  --accent-purple: #a855f7;
+  --accent-violet: #7c3aed;
+  --accent-glow: #c084fc;
+
+  /* Glass */
+  --glass-border: rgba(255, 255, 255, 0.10);
+  --glass-inner: rgba(255, 255, 255, 0.06);
+}
+
+/* ── Base resets ─────────────────────────────────────────────────────────── */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-base);
+  color: #ffffff;
+  min-height: 100dvh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ── Glass mask utility (gradient border via mask) ───────────────────────── */
+/*
+  Usage: add `glass-mask` class to any element that needs the gradient border.
+  Pair with a `border border-transparent` Tailwind class.
+*/
+.glass-mask {
+  position: relative;
+}
+
+.glass-mask::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(
+    135deg,
+    rgba(168, 85, 247, 0.45),
+    rgba(0, 255, 136, 0.25),
+    rgba(124, 58, 237, 0.35)
+  );
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+/* ── Perspective helper ──────────────────────────────────────────────────── */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+/* ── Selection colour ────────────────────────────────────────────────────── */
+::selection {
+  background: rgba(168, 85, 247, 0.35);
+  color: #ffffff;
+}
+
+/* ── Scrollbar ───────────────────────────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(168, 85, 247, 0.3);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(168, 85, 247, 0.5);
+}

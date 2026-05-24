@@ -1,0 +1,17 @@
+{
+  "liked_movies": [],
+  "disliked_movies": [],
+  "liked_genres": [],
+  "disliked_genres": [],
+  "genre_weights": {
+    "Action": 1.0, "Adventure": 1.0, "Animation": 1.0, "Comedy": 1.0,
+    "Crime": 1.0, "Documentary": 1.0, "Drama": 1.0, "Family": 1.0,
+    "Fantasy": 1.0, "History": 1.0, "Horror": 1.0, "Music": 1.0,
+    "Mystery": 1.0, "Romance": 1.0, "Science Fiction": 1.0, "Sci-Fi": 1.0,
+    "Thriller": 1.0, "TV Movie": 1.0, "War": 1.0, "Western": 1.0
+  },
+  "last_recommendations": [],
+  "last_recommendation_scores": {},
+  "last_requested_genres": [],
+  "preference_events": []
+}
